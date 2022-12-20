@@ -1,6 +1,9 @@
 # App specific
 .vs/
 *.sde
+yolov5/
+!yolov5/.gitkeep
+**/tower_scout/*.pt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -131,8 +134,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-demo/runs
-yolov5/
-!yolo5/.gitkeep
-**/tower_scout/*.pt
