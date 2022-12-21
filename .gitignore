@@ -1,8 +1,8 @@
 # App specific
 .vs/
 *.sde
-# yolov5/
-# !yolov5/.gitkeep
+yolov5/*
+!yolov5/.gitkeep
 **/tower_scout/*.pt
 
 # Byte-compiled / optimized / DLL files
