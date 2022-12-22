@@ -4,6 +4,9 @@
 yolov5/*
 !yolov5/.gitkeep
 **/tower_scout/*.pt
+data/*/*
+!data/sql/*
+config.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

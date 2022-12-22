@@ -6,4 +6,4 @@ See the ArcGIS Online (AGOL) [map service](https://lacounty.maps.arcgis.com/home
 
 Additionally, this folder is used to store the database connection file (.sde) for access to the SQL Server database, as well as temporary image files that are created as part of the detection program runs.
 
-The sql/ folder includes random SQL queries used to update the supplemental information with (buildings, parcels, etc) for the detection points.
+See also the /QA/sql folder in this repository for example SQL queries calculate the supplemental information (buildings, parcels, etc) for the detection points.
