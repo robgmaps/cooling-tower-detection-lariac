@@ -23,7 +23,7 @@ Our initial step was to break the LARIAC Mosaic into roughly 8200x8200 pixel til
 
 ### Run the program
 
-The main program file is _lariac_ts_detection.py_.  Set the name or number of random tiles to run in the `__main__` section.  Our process was to run 500 or so random tiles at a time concurrently on 3-4 different servers, tracking progress using the [tile index](https://lacounty.maps.arcgis.com/home/item.html?id=8fcf42dad05b4f64b5595f0b683acc1a&sublayer=9#data) stored in SQL Server.  On a standard Windows server or desktop it took about 10 minutes to complete a tile (around 13,000 total tiles were processed).  A faster or more efficient method could be to use containers and/or utilize the GPU/CUDA capabilities of PyTorch.
+The main program file is _lariac_ts_detection.py_.  Set the tile name or number of random tiles to run in the `__main__` section.  Our process was to run 500 or so random tiles at a time concurrently on 3-4 different servers, tracking progress using the [tile index](https://lacounty.maps.arcgis.com/home/item.html?id=8fcf42dad05b4f64b5595f0b683acc1a&sublayer=9#data) stored in SQL Server.  On a standard Windows server or desktop it took about 10 minutes to complete a tile (around 13,000 total tiles were processed).  A faster or more efficient method could be to use containers and/or utilize the GPU/CUDA capabilities of PyTorch.
 
 We found lots of false positives in the detection results, most commonly air conditioners that were not cooling towers. Some next steps could be to better train the model based on our results, and to investigate any upgrades to how the model is implemented (e.g. tile size, capturing other data or metadata, running the program faster).
 
